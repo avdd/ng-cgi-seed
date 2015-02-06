@@ -1,0 +1,74 @@
+{
+  "config": {
+    "client_src": "src/client",
+    "server_src": "src/server",
+    "vendor_src": ".cache/bower_components"
+  },
+  "vendor": {
+    "css": [
+      "bootstrap/dist/css/bootstrap.css"
+    ],
+    "js": [
+      "jquery/dist/jquery.js",
+      "angular/angular.js",
+      "angular-route/angular-route.js",
+      "bootstrap/dist/js/bootstrap.js"
+    ],
+    "other": [
+      "bootstrap/less/bootstrap.less",
+      "bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "bootstrap/dist/fonts/glyphicons-halflings-regular.woff"
+    ]
+  },
+  "app": {
+    "outer_html": [
+      "index.html"
+    ],
+    "inner_html": [
+      "main.html",
+      "about.html"
+    ],
+    "css": [
+      "main.css"
+    ],
+    "js": [
+      "main.js"
+    ],
+    "py": [
+      "*.py"
+    ]
+  },
+  "tests": {
+    "api": [
+      "test/server/*.py"
+    ],
+    "client": [
+      "test/client/*.js"
+    ],
+    "system": [
+      "test/system/*.js"
+    ]
+  },
+  "watch": {
+    "py": [
+      "**/*.py"
+    ],
+    "js": [
+      "**/*.js"
+    ],
+    "css": [
+      "**/*.css"
+    ],
+    "inner_html": [
+      "*.html"
+    ],
+    "outer_html": [
+      "index.html"
+    ],
+    "build": [
+      "**/*"
+    ]
+  }
+}
